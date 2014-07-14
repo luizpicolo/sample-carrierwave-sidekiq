@@ -1,0 +1,18 @@
+<div class="pure-g">
+    <div class="pure-u-1-2">
+    	<h1>Carrierwave + SideKiq</h1>
+    	<%= form_tag({action: :uploads}, multipart: true) do %>
+		  <%= file_field_tag 'avatar' %>
+		  <%= submit_tag %>
+		<% end %>
+    </div>
+    <div class="pure-u-1-2">
+    	<% @user.each do |user| %>
+		  <% if !user.avatar_processing %>
+		    <img src="<%= user.avatar.sq_150 %>" alt="">
+		  <% end %>
+		<% end %>
+    </div>
+</div>
+
+
