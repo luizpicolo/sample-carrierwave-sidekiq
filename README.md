@@ -1,4 +1,7 @@
-sample-carrierwave-sidekiq
-==========================
+# Sample Carrierwave + Sidekiq
 
-Sample Carrierwave + SideKiq
+Simple example for the use of [Carrierwave](https://github.com/carrierwaveuploader/carrierwave) + [SideKiq](http://sidekiq.org/)
+
+## How To use
+
+*in Progress*
